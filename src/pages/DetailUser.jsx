@@ -1,9 +1,9 @@
-import React from 'react';
-import Dropdown from '../components/dropdown/DropdownCity';
-import DropdownProvinsi from '../components/dropdown/dropdownProvinsi';
-import { Link } from 'react-router-dom';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
+import React from "react";
+import Dropdown from "../components/dropdown/DropdownCity";
+import DropdownProvinsi from "../components/dropdown/dropdownProvinsi";
+import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const DetailUser = () => {
   return (
@@ -20,29 +20,25 @@ const DetailUser = () => {
                 <div>
                   <label className="text-xl fonst-semibold mb-2  "> Email</label>
                   <br />
-                  <input type="text" className="px-5 text-xl my-5 py-2 w-[400px] rounded rounded-lg border border-red-200 hover:border-red-600 transition duration-300" />
+                  <input type="text" className="px-5 text-xl my-5 py-2 w-[400px] rounded border border-red-200 hover:border-red-600 transition duration-300" />
                   <br />
                   <label className="text-xl fonst-semibold mb-2  "> Nama</label>
                   <br />
-                  <input type="text" className="px-5 text-xl my-5 py-2 w-[400px] rounded rounded-lg border border-red-200 hover:border-red-600 transition duration-300" />
+                  <input type="text" className="px-5 text-xl my-5 py-2 w-[400px] rounded border border-red-200 hover:border-red-600 transition duration-300" />
                   <br />
                   <label className="text-xl fonst-semibold mb-2  "> No Telp</label>
                   <br />
-                  <input type="text" className="px-5 text-xl my-5 py-2 w-[400px] rounded rounded-lg border border-red-200 hover:border-red-600 transition duration-300" />
+                  <input type="text" className="px-5 text-xl my-5 py-2 w-[400px] rounded border border-red-200 hover:border-red-600 transition duration-300" />
                   <br />
                   <label className="text-xl fonst-semibold mb-2  "> Whatsapp</label>
                   <br />
-                  <input type="text" className="px-5 text-xl my-5 py-2 w-[400px] rounded rounded-lg border border-red-200 hover:border-red-600 transition duration-300" />
-                  <br />
-                  <label className="text-xl fonst-semibold mb-2  "> Line</label>
-                  <br />
-                  <input type="text" className="px-5 text-xl my-5 py-2 w-[400px] rounded rounded-lg border border-red-200 hover:border-red-600 transition duration-300" />
+                  <input type="text" className="px-5 text-xl my-5 py-2 w-[400px] rounded border border-red-200 hover:border-red-600 transition duration-300" />
                   <br />
                 </div>
                 <div>
                   <label className="text-xl fonst-semibold mb-2  "> Atas Nama</label>
                   <br />
-                  <input type="text" className="px-5 text-xl my-5 py-2 w-[400px] rounded rounded-lg border border-red-200 hover:border-red-600 transition duration-300" />
+                  <input type="text" className="px-5 text-xl my-5 py-2 w-[400px] rounded border border-red-200 hover:border-red-600 transition duration-300" />
                   <br />
                   <label className="text-xl fonst-semibold mb-2  "> Provinsi</label>
                   <br />
@@ -54,10 +50,10 @@ const DetailUser = () => {
                   <br />
                   <label className="text-xl fonst-semibold mb-2  "> Detail Alamat</label>
                   <br />
-                  <input type="text" className="px-5 text-xl my-5 py-2 w-[400px] rounded rounded-lg border border-red-200 hover:border-red-600 transition duration-300 h-[150px] " />
+                  <input type="text" className="px-5 text-xl my-5 py-2 w-[400px] rounded border border-red-200 hover:border-red-600 transition duration-300 h-[70px] " />
                   <br />
                   <Link to="/checkout">
-                    <button type="submit" className="bg-primary px-3 py-2 text-white hover:bg-red-200 rounded rounded-lg transition duration-300">
+                    <button type="submit" className="bg-primary px-3 py-2 text-white hover:bg-red-200 rounded transition duration-300">
                       Simpan
                     </button>
                   </Link>

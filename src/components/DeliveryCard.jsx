@@ -41,7 +41,7 @@ const DeliveryCard = () => {
 
   const { cart, total, clearCart } = useContext(CartContext);
   return (
-    <div className="w-[80%] mt-10 bg-white  flex mx-auto rounded rounded-lg border border-pink-200 h-full mb-[20px]  hover:shadow-3xl px-7 pt-5">
+    <div className="w-[80%] mt-10 bg-white  flex mx-auto rounded border border-pink-200 h-full mb-[20px]  hover:shadow-3xl px-7 pt-5">
       <div className="w-full h-full">
         <div className=" px-5 items-center flex  w-[100%] bg-gray-200 h-[30px] text-semibold">Pilih Pengiriman</div>
         <Delivery />
@@ -60,7 +60,7 @@ const DeliveryCard = () => {
             <div className=" flex justify-end ">
               {" "}
               <Link to="/invoice">
-                <button type="submit" className="bg-primary  text-white rounded rounded-lg hover:bg-red-200 transition duration-300 px-5 py-2" onClick={clearCart}>
+                <button type="submit" className="bg-primary  text-white rounded hover:bg-red-200 transition duration-300 px-5 py-2" onClick={clearCart}>
                   Submit Order
                 </button>
               </Link>

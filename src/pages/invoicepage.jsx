@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import Spinner from '../components/skeleton/spinner';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import Spinner from "../components/skeleton/spinner";
+import { Link } from "react-router-dom";
 
 const Invoice = () => {
   const [data, setData] = useState(null);
@@ -9,10 +9,10 @@ const Invoice = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://demo.sistemtoko.com/public/show_invoice/101C2O');
+        const response = await axios.get("https://demo.sistemtoko.com/public/show_invoice/101C2O");
         setData(response.data);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error("Error fetching data:", error);
       }
     };
 
@@ -29,7 +29,7 @@ const Invoice = () => {
 
   return (
     <section className="bg-red-100 h-full   ">
-      <div className="container md:w-[50%] xl:w-[50%] lg:w-[50%] bg-white items-center  mx-auto justify-center">
+      <div className="container md:w-[50%] xl:w-[50%] lg:w-[50%] bg-white items-center mx-auto justify-center overflow-y-auto max-h-screen">
         <div className=" h-[100vh]  ">
           <div className="pt-10 text-3xl text-center border-b border-black  border-w-[100px] px-10 font-semibold ">INVOICE</div>
           <div className="px-[50px] py-[50px]">
@@ -90,7 +90,7 @@ const Invoice = () => {
               </div>
             </div>
           </div>
-          <Link to={'/'} className="btn border items-center text-xl border-slate-400 hover:bg-slate-400 hover:text-white transition duration-300 justify-center mx-auto flex py-3 px-5 w-[70%] rounded rounded-lg ">
+          <Link to={"/"} className="btn border items-center text-xl border-slate-400 hover:bg-slate-400 hover:text-white transition duration-300 justify-center mx-auto flex py-3 px-5 w-[70%] rounded ">
             Kembali ke halaman utama
           </Link>
         </div>
