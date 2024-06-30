@@ -9,7 +9,7 @@ const Product = ({ product }) => {
     <div>
       <div className="border border-[#e4e4e4] h-[300px] mb-4 relative overflow-hidden group transition">
         <div className="w-full h-full flex justify-center items-center">
-          <Link to={`/${id}`}>
+          <Link to={`/product/${id}`}>
             <div className="w-[200] mx-auto flex justify-center items-center">
               <img className="max-h-[160px] group-hover:scale-110 transition duration-300 " src={photo} alt="" />
             </div>

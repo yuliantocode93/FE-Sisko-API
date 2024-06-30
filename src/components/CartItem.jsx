@@ -5,8 +5,8 @@ import { CartContext } from "../contexts/CartContext";
 
 const CartItem = ({ item }) => {
   const { name, id, photo, price, amount } = item;
-
   const { removeCart, increaseAmount, decreaseAmount } = useContext(CartContext);
+
   return (
     <div className="flex">
       <div className="w-full min-h-[150px] flex items-center gap-x-4">

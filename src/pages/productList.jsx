@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
@@ -7,11 +7,11 @@ const ProductList = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://sistemtoko.com/public/demo/product');
-        console.log('Respon API:', response.data);
+        const response = await axios.get("https://sistemtoko.com/public/demo/product");
+        console.log("Respon API:", response.data);
         setProducts(response.data.aaData);
       } catch (error) {
-        console.error('Error mengambil data:', error);
+        console.error("Error mengambil data:", error);
       }
     };
 
@@ -30,7 +30,7 @@ const ProductList = () => {
               <p>Price: {product.price}</p>
               <p>Stock: {product.stock}</p>
 
-              <img src={product.photo} alt={product.name} style={{ maxWidth: '100px' }} />
+              <img src={product.photo} alt={product.name} style={{ maxWidth: "100px" }} />
               {product.varian && (
                 <div>
                   <h4>Variants:</h4>

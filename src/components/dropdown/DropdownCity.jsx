@@ -1,14 +1,13 @@
-import axios from 'axios';
-import { useEffect, useState } from 'react';
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 const Dropdown = () => {
   const [kota, setKota] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://demo.sistemtoko.com/city/5');
+        const response = await axios.get("https://demo.sistemtoko.com/city/5");
         setKota(response.data);
-     
       } catch (err) {
         console.log(err);
       }
